@@ -1,0 +1,49 @@
+
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:24px;
+    padding:24px;
+    justify-content: space-between;
+}
+
+.movie-card {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:12px;
+    background-color: #f7f7f7;
+    padding:12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.cart-srap {
+    display: flex;
+    align-items: center;
+    gap:12px;
+    color:#ffffff
+}
+
+.cart-btn {
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+
+.movie-card span {
+    max-width: 180px;
+    text-align: center;
+    font-weight: 600;
+    color:#666333
+}
+
+.movie-card:hover   {
+    transform: scale(1.02);
+}
+

@@ -1,0 +1,62 @@
+Redux is a state management library used to manage and centralize application state.
+
+1.Store :- The central location where the entire state of your application is stored. //Bank 
+2.Action:-Objects that describe what happened. Must have a type property, which is a string describing the action.  
+//Customer wants to deposit 
+3.Reducer :-Functions that specify how the state changes in response to an action.
+4.Dispatch :- A method used to send actions to the store.
+5.Subscribe :- A method to listen for state changes in the store.
+
+Workflow of Redux 
+User Action -> Dispatch Action -> Reducer -> Update Store -> UI Update
+
+
+
+
+Principle of Redux :-
+1.Single Source of Truth:-As whole application state is stored in a single tree, it makes debugging easy, and development faster.
+2.State is Read-only:-The only way to change the state is to emit an action, an object describing what happened. This means nobody can directly change the state of your application.
+3.Changes are made with pure functions :-  A reducer is a central place where state modification takes place. Reducer is a function which takes state and action as arguments, and returns a newly updated state.
+
+Action :- An action is a plain object that describes the intention to cause change with a type property. It must have a type property which tells what type of action is being performed.
+Actions and states are held together by a function called Reducer.
+
+createStore(reducer, [preloadedState], [enhancer])
+
+Basic Flow of Redux application
+
+//Step 1
+const initialState = { name:"REACT" };
+
+//Step3
+function reducer(state = initialState, action){                //It will receive state & action .
+  console.log(action);
+
+   if(action.type ==='UPDATE_NAME'){                           
+    // state.name = action.value;                           //Never update state directly    
+    const oldState = {...state};
+    oldState.name = action.value;
+    return oldState;                //This reducer function must return a state;                                                        
+    
+   }    
+   return state;                            
+                                //based on action ,return a state.                                           
+}                                                                                       
+//Step 4
+const action = {
+  type:"UPDATE_NAME",
+  value:"JS"
+  }
+
+//Step 2
+const store = createStore(reducer);
+
+//Step 6
+store.subscribe(()=>{
+  console.log("Store Changed", store.getState());
+});
+
+//Step 5
+store.dispatch(action);
+
+console.log(store.getState());

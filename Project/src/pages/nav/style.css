@@ -1,0 +1,29 @@
+
+
+.nav {
+    height:48px;
+     background-color: darkslategray;
+     width: 100vw;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding-inline: 24px;
+     box-sizing: border-box;
+     padding-block: 4px;
+     position: sticky;
+     top:0;
+     z-index: 99;
+     margin-bottom: 20px;
+}
+
+.img-btn {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+.nav-dex {
+    display: flex;
+        align-items: center;
+        gap: 2px;
+}

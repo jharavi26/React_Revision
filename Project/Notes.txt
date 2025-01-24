@@ -3,15 +3,12 @@ Redux is a state management library used to manage and centralize application st
 1.Store :- The central location where the entire state of your application is stored. //Bank 
 2.Action:-Objects that describe what happened. Must have a type property, which is a string describing the action.  
 //Customer wants to deposit 
-3.Reducer :-Functions that specify how the state changes in response to an action.
+3.Reducer :-Functions that specify how the state changes in response to an action. (state, action )
 4.Dispatch :- A method used to send actions to the store.
 5.Subscribe :- A method to listen for state changes in the store.
 
 Workflow of Redux 
 User Action -> Dispatch Action -> Reducer -> Update Store -> UI Update
-
-
-
 
 Principle of Redux :-
 1.Single Source of Truth:-As whole application state is stored in a single tree, it makes debugging easy, and development faster.

@@ -20,7 +20,6 @@ function Account() {
   return ( 
     <div className='card'>
       <div className='container'>
-        <h3>App</h3>
         <h4>
           <b>Account Component</b>
         </h4>

@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./App.css";
-import Account from "./Component/Account";
 import Bonus from "./Component/Bonus";
+import { MyContext } from "./Component/Context/context";
+import { Account } from "./Component/Account";
+
 
 
 
 
 function App() {
+
+  const [text, setText] = useState("Art")
   return (
     <div className="App">
-      <h1>App</h1>
-      <h2>Current Amount : </h2>
-      <h2>Total Bonus : </h2>
-      <Account />
+      <h1>Change the Theme</h1>
+      <MyContext.Provider value = {{text, setText}}>
+        <Account />
       <Bonus />
+    </MyContext.Provider>
+      
       
     </div>
    

@@ -1,23 +1,22 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { MyContext } from './Context/context'
 
 function Bonus() {
 
-  const [bonus, setBonus] = useState({points:0})
+  const {text, setText} = useContext(MyContext);
 
-  const increment = ()=>{
-    setBonus({points:bonus.points+1})
-
+  const handleChange = ()=>{
+    setText("Ravikumar")
   }
+
+  
   return (
-    <div className='card'>
-      <h4>
-        <b>Bonus Component</b>
-        </h4>
-        <h3>Total Point : {bonus.points}</h3>
-        <button onClick={increment}>Increment</button>
-      
-      
+    <div>
+      <button onClick={handleChange}>Change</button>
+      <p>{text}</p>
+
     </div>
+
   )
 }
 

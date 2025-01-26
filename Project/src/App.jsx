@@ -9,6 +9,7 @@ import Bonus from "./Component/Bonus";
 function App() {
   return (
     <div className="App">
+      <h1>App</h1>
       <h2>Current Amount : </h2>
       <h2>Total Bonus : </h2>
       <Account />

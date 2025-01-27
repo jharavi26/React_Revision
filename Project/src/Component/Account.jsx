@@ -1,37 +1,15 @@
-import React, { useState } from 'react'
+import { useContext } from "react"
+import { MyContext } from "./Context/context"
 
-function Account() {
 
-  const [account, setAccount] = useState({amount : 1});
-  const [value, setValue] = useState(0);
 
-  const increment = ()=>{
-    setAccount({amount:account.amount+1})
-  }
+export const Account = ()=>{
 
-  const decrement = ()=>{
-    setAccount({amount:account.amount-1})
-  }
-
-  const incrementByAmount = ()=>{
-    setAccount({amount:account.amount+value})
-  }
-
-  return ( 
-    <div className='card'>
-      <div className='container'>
-        <h4>
-          <b>Account Component</b>
-        </h4>
-        <h3>Amount:${account.amount}</h3>
-        <button onClick={increment}>Increment +</button>
-        <button onClick ={decrement}>Decrement -</button>
-        <input type ="text" onChange={(e)=> setValue(+e.target.value)}></input>
-        <button onClick={()=>incrementByAmount(value)}>Increment By {value}</button>
-      </div>
-      
+  const {text, setText} = useContext(MyContext);
+  return(
+    <div>
+      <h3>{text}</h3>
     </div>
   )
-}
 
-export default Account
+}

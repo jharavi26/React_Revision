@@ -3,9 +3,7 @@ import "./App.css";
 import Bonus from "./Component/Bonus";
 import { MyContext } from "./Component/Context/context";
 import { Account } from "./Component/Account";
-
-
-
+import Data from "./Component/Data";
 
 
 function App() {
@@ -18,6 +16,7 @@ function App() {
         <Account />
       <Bonus />
     </MyContext.Provider>
+    <Data />
       
       
     </div>

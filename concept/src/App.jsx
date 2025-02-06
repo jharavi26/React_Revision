@@ -1,6 +1,7 @@
 
 import './App.css'
 import One from './Components/One'
+import Two from './Components/Two'
 
 function App() {
  
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <One />
+        <Two />
       
         
       </div>

@@ -1,0 +1,19 @@
+Routing in React is managed using a library called React Router, which allows developers to create and manage navigation within a React application.
+Router dom is Library in which many functionality we have to import it & use it.
+
+Routes: A container for defining multiple routes.
+Route: Matches the URL path and renders the corresponding component.
+
+A Navigation Bar (or Navbar) is a user interface element that provides links or menus to help users navigate through a website or application. 
+
+Using the Link component ensures navigation adheres to SPA principles, providing better performance, user experience, and integration with React Router. 
+The <a> tag is suitable for external links or non-SPA contexts.
+
+The NavLink component is similar to Link, but it has additional features for styling the currently active link.
+
+Command :-npm install react-router dom 
+
+Step 1:-BroswerRotuer :-wrapping your application in a BrowserRouter component, which enables routing functionality.
+Step 2:-Routes and Route Components: Routes are defined using the Route component, which specifies the path and the component to render.
+Step 3:-Navigation: Use the Link or NavLink component to navigate between routes without reloading the page.
+

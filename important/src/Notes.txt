@@ -8,3 +8,7 @@ Used to optimize computation-heavy operations inside a component.
 
 useCallback Hook :-The useCallback hook is used to memoize functions so that they are not recreated on every render.
  It is useful when passing functions as props to child components, preventing unnecessary re-renders.
+
+
+Code Splitting = Breaking the Code into Chunks
+Lazy Loading = Loading Chunks When Needed

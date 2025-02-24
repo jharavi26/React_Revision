@@ -1,0 +1,10 @@
+React.memo :- It is a higher-order component (HOC) that wraps a functional component.
+It memoizes the entire component and prevents unnecessary re-renders when props don’t change.
+Useful for pure functional components that always render the same output given the same props.
+
+useMemo Hook :- It is a React Hook that memoizes the result of a function.
+Prevents expensive calculations from running on every render.
+Used to optimize computation-heavy operations inside a component.
+
+useCallback Hook :-The useCallback hook is used to memoize functions so that they are not recreated on every render.
+ It is useful when passing functions as props to child components, preventing unnecessary re-renders.

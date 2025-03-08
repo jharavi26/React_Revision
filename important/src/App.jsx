@@ -6,6 +6,7 @@ import Memo from './component/Memo'
 import SumCalculator from './component/Memo_Hook';
 import Callback2 from './component/Callback2';
 import Loading from './component/Loading';
+import Reducer from './component/Reducer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,7 +22,8 @@ function App() {
           <button onClick={Addition}>Increase</button>
     <SumCalculator />
     <Callback2 />
-    <Loading />
+    <Loading />\
+    <Reducer/>
     </div>
   )
 }

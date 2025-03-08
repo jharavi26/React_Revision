@@ -8,6 +8,7 @@ import ProductDetails from './Pages/ProductDetails'
 import Dashboard from './Component/Dashboard'
 import Setting from './Pages/Setting'
 import NotFound from './Component/NotFound'
+import Second from './Modern/Second'
 
 
 
@@ -30,7 +31,7 @@ function App() {
 
       </BrowserRouter>
 
-
+{/* <Second/> */}
       
     </div>
   )

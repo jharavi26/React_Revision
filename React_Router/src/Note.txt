@@ -1,0 +1,8 @@
+<BrowserRouter> wraps the entire application to enable routing.
+<Routes> contains all route definitions.
+<Route> specifies paths and components to render.
+
+useNavigate() :- programmatically navigates users.
+
+<Outlet /> renders child components inside a parent layout.
+

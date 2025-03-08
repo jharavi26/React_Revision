@@ -6,13 +6,8 @@ import { MyContextProvider } from '../context/Context'
 function Layout() {
   return (
     <div>
-
-     
       <Navbar/>
-      <Outlet/>
-     
- 
-      
+      <Outlet/> 
     </div>
   )
 }

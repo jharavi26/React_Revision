@@ -1,6 +1,9 @@
 import React from 'react'
 import './App.css'
-import Form3 from './Components/Form3'
+import Form3 from './Forms/Form3'
+
+
+
 
 
 function App() {
@@ -8,8 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Form3 />
-        
+        <Form3/>
        
       </div>
     </>

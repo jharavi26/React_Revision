@@ -1,12 +1,12 @@
 import React from 'react'
 
-function About() {
+function Setting() {
   return (
     <div>
-      <h1>About</h1>
+      Setting Page
       
     </div>
   )
 }
 
-export default About
+export default Setting

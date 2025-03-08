@@ -1,23 +1,38 @@
 import React from 'react'
-import {Route, BrowserRouter, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Products from './pages/Products'
-import About from './pages/About'
-import Contact from './pages/Contact'
-import Navbar from './components/Navbar'
+import { BrowserRouter , Route, Routes  } from 'react-router-dom'
+import Home from './Pages/Home'
+import About from './Pages/About'
+import Contact from './Pages/Contact'
+import Navbar from './Component/Navbar'
+import ProductDetails from './Pages/ProductDetails'
+import Dashboard from './Component/Dashboard'
+import Setting from './Pages/Setting'
+import NotFound from './Component/NotFound'
 
-const App = () => {
+
+
+function App() {
+
   return (
-  <BrowserRouter>
-  <Navbar />
-  <Routes>
-        <Route path='/' element={<Home />}/>
-        <Route path='/products' element={<Products />}/>
-        <Route path='/about' element={<About />}/>
-        <Route path='/contact' element={<Contact/>}/>
+    <div>
+      <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element = {<Home/>} />
+        <Route path='/about' element = {<About/>} />
+        <Route path='/contact' element = {<Contact/>} />
+        <Route path = "/product/:id" element = {<ProductDetails/>} />
+        <Route path = "/dashboard" element = {<Dashboard/>}>
+        <Route path = "setting" element = {<Setting/>}/>
+        </Route>
+        <Route path = "*" element = {<NotFound/>}/>
+      </Routes>
 
-        </Routes>
       </BrowserRouter>
+
+
+      
+    </div>
   )
 }
 

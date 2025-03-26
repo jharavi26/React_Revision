@@ -12,7 +12,7 @@ function Contact() {
   return (
     <div>
       <h1>Contact</h1>
-      <button onClick={handleClick}>Go to Setting </button>
+      <button onClick={handleClick}> Go to Setting </button>
     </div>
   )
 }

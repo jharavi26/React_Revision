@@ -8,6 +8,7 @@ import ProductDetails from './Pages/ProductDetails'
 import Dashboard from './Component/Dashboard'
 import Setting from './Pages/Setting'
 import NotFound from './Component/NotFound'
+import UserProfile from './Pages/UserProfile'
 import Second from './Modern/Second'
 
 
@@ -27,7 +28,9 @@ function App() {
         <Route path = "setting" element = {<Setting/>}/>
         </Route>
         <Route path = "*" element = {<NotFound/>}/>
+        <Route path="/user/:name" element={<UserProfile />} />
       </Routes>
+    
 
       </BrowserRouter>
 

@@ -10,6 +10,7 @@ import Setting from './Pages/Setting'
 import NotFound from './Component/NotFound'
 import UserProfile from './Pages/UserProfile'
 import Second from './Modern/Second'
+import Filter from './Pages/Filter'
 
 
 
@@ -29,6 +30,7 @@ function App() {
         </Route>
         <Route path = "*" element = {<NotFound/>}/>
         <Route path="/user/:name" element={<UserProfile />} />
+        <Route path="/filter" element={<Filter />} />
       </Routes>
     
 

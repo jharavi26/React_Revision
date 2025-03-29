@@ -45,3 +45,9 @@ const productSlice = createSlice({
 
 // Export actions and reducer
 
+export const { increment, decrement, reset , incrementByAmount } = counterSlice.actions;
+export default counterSlice.reducer;
+
+
+export const productReducer =  productSlice.reducer;
+

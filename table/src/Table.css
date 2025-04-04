@@ -1,0 +1,49 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-top: 50px;
+  background-color: black;
+  border: 5px solid aqua;
+  color: white;
+}
+
+.table {
+  border: 5px solid blue;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1200px; /* Optional */
+  table-layout: fixed;
+}
+
+.table td {
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  /* Remove margin */
+}
+
+.page{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.page span{
+  border: 2px solid black;
+  padding: 10px 15px;
+}
+
+.disable{
+  opacity: 0;
+}
+
+.active{
+  background-color: grey;
+}
+

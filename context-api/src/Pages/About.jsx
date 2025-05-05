@@ -4,7 +4,7 @@ import { useContext } from 'react';
 
 function About() {
 
-  const {name, changeName , theme , ToggleTheme } = useContext(MyContext);
+  const {name, changeName } = useContext(MyContext);
   return (
     <div>
       <h1>About</h1>

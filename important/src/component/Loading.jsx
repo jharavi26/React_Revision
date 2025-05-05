@@ -10,7 +10,7 @@ function Loading() {
   return (
     <BrowserRouter>
      <Suspense fallback={<h2>Loading...</h2>}>
-    <Routes>
+     <Routes>
       <Route path = "/" element = {<Home/>}></Route>
       <Route path = "/content" element = {<Content/>}></Route>
       <Route path = "/footer" element = {<Footer/>}></Route>

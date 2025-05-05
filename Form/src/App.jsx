@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import Form3 from './Forms/Form3'
+import Form1 from './Forms/Form1'
 
 
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <div>
-        <Form3/>
+        <Form1/>
        
       </div>
     </>
